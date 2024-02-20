@@ -12,25 +12,38 @@
 </head>
 
 <body>
-  <header>
+  <header class="mx-2 lg:mx-8 my-4">
     <nav>
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn  btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
               </svg>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Destination</a></li>
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="text-3xl font-extrabold">Z-Ticket</a>
+          <a class="btn btn-ghost font-extrabold text-4xl">Z-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -41,11 +54,154 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Button</a>
+          <a
+            class="btn border-2 border-green-400 bg-green-300 font-extrabold text-green-700"
+            >Bus <img src="images/bus-icon.png" alt=""
+          /></a>
         </div>
       </div>
     </nav>
+
+    <div
+      class="hero min-h-screen rounded-3xl bg-cover"
+      style="background-image: url(images/banner.png)"
+    >
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+          <p class="mb-5">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+            et a id nisi.
+          </p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div class="stats shadow">
+      <div class="stat">
+        <div class="stat-figure text-primary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block w-8 h-8 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            ></path>
+          </svg>
+        </div>
+        <div class="stat-title">Total Likes</div>
+        <div class="stat-value text-primary">25.6K</div>
+        <div class="stat-desc">21% more than last month</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-figure text-secondary">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block w-8 h-8 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+            ></path>
+          </svg>
+        </div>
+        <div class="stat-title">Page Views</div>
+        <div class="stat-value text-secondary">2.6M</div>
+        <div class="stat-desc">21% more than last month</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-figure text-secondary">
+          <div class="avatar online">
+            <div class="w-16 rounded-full">
+              <img
+                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="stat-value">86%</div>
+        <div class="stat-title">Tasks done</div>
+        <div class="stat-desc text-secondary">31 tasks remaining</div>
+      </div>
+    </div>
   </header>
+
+  <!-- Offer -->
+  <h2 class="text-4xl my-12 text-center raleway font-bold">
+    Best Offers For You
+  </h2>
+  <section class="flex gap-8 mx-8">
+    <div class="bg-yellow-400 inter flex rounded-lg">
+      <div class="p-12">
+        <h3 class="text-4xl">15% OFF</h3>
+        <p class="text-2xl font-semibold">on your next purchase</p>
+        <p class="text-xl font-medium text-gray-100">use by January 2024</p>
+      </div>
+      <img src="images/cupon-devider.png" alt="" />
+      <div class="new15 p-16 items-center">
+        <h3 class="text-3xl font-bold">NEW15</h3>
+        <p>Coupon Code</p>
+      </div>
+    </div>
+    <div class="bg-red-400 inter flex rounded-lg">
+      <div class="p-12">
+        <h3 class="text-4xl">20% OFF</h3>
+        <p class="text-xl font-semibold">on your next purchase</p>
+        <p class="text-xl font-medium text-gray-100">use by January 2024</p>
+      </div>
+      <img src="images/cupon-devider.png" alt="" />
+      <div class="new15 p-16">
+        <h3 class="text-3xl font-bold">Couple20</h3>
+        <p>Coupon Code</p>
+      </div>
+    </div>
+  </section>
+  <div class="flex justify-center my-4 lg:my-16">
+    <button
+      class="btn btn-outline text-2xl border-green-500 font-bold text-green-500"
+    >
+      See All Offers
+    </button>
+  </div>
+  <!-- Paribahan Section -->
+  <section class="bg-slate-200 border-t-4 rounded-t-3xl mx-2 lg:mx-8">
+    <div class="text-center mx-auto space-y-6 p-20">
+      <h2 class="text-3xl font-bold">Z.R Paribahan</h2>
+      <p>
+        Yes, you can run unit tests and view the results directly within the
+        app. <br />
+        The integrated testing features allow for a streamlined .
+      </p>
+    </div>
+    <div class="bg-white mx-32 my-8 p-8">
+      <div class="">
+        <div class="flex space-x-4">
+            <img src="images/bus-logo.png" alt="">
+          <div class="">
+            <h3> eZy Paribahan</h3>
+            <p>Coach-009 World Class! AC_Biz</p>
+          </div>
+          <button class="bg-green-200"><img src="images/seat-green.png" alt="">40 Seats left</button>
+          <!-- <div class="flex border-2 border-green-300">
+            <img src="images/seat-green.png" alt="">
+            <p>40 Seats left</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  
 
   <!-- ticket section -->
   <section class="bg-white mx-32 grid grid-cols-3 gap-4 justify-between">
@@ -154,12 +310,8 @@
     </div>
 
   </section>
-
-  <div class="m-10">
-    <h1> Hello world</h1>
-  <p>Go forward</p>
-  <div class=""><button onclick="handleClick(event)" class="btn  btns" id="test">click me</button></div>
-  </div>
+</section>
+ 
 
 <script src="script.js"></script>
 <script src="app.js"></script>
