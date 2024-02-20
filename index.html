@@ -5,8 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Z Ticket</title>
+  
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,7 +17,7 @@
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn btn  btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
@@ -28,7 +30,7 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">Z-Ticket</a>
+          <a class="text-3xl font-extrabold">Z-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -57,11 +59,11 @@
       
       <div class="flex flex-1">
         <img src="images/seat-gray.png" alt="">
-        <span>Available</span>
+        <p><span id="seatAvailable"> 20</span> Available</p>
       </div>
       <div class="flex">
         <img src="images/seat-green-filled.png" alt="">
-        <span>Selected</span>
+        <p>Selected <span id="price">550</span></p>
       </div>
     </div>
     <hr class="border-dashed">
@@ -70,30 +72,30 @@
     </div>
     <div class="grid grid-cols-5 gap-7">    
       <kbd class="">A</kbd>
-      <kbd class="kbd">A1</kbd>
-      <kbd class="kbd">A2</kbd>
-      <kbd class="kbd">A3</kbd>
-      <kbd class="kbd">A4</kbd>
+      <kbd id="A1" class="btn  btns">A1</kbd>
+      <kbd id="A2" class="btn  btns">A2</kbd>
+      <kbd id="A3" class="btn  btns">A3</kbd>
+      <kbd id="A4" class="btn  btns">A4</kbd>
       <kbd class="">B</kbd>
-      <kbd class="kbd">B1</kbd>
-      <kbd class="kbd">B2</kbd>
-      <kbd class="kbd">B3</kbd>
-      <kbd class="kbd">B4</kbd>
+      <kbd id="B1" class="btn  btns">B1</kbd>
+      <kbd id="B2" class="btn  btns">B2</kbd>
+      <kbd id="B3" class="btn  btns">B3</kbd>
+      <kbd id="B4" class="btn  btns">B4</kbd>
       <kbd class="">C</kbd>
-      <kbd class="kbd">C1</kbd>
-      <kbd class="kbd">C2</kbd>
-      <kbd class="kbd">C3</kbd>
-      <kbd class="kbd">C4</kbd>
+      <kbd id="C1" class="btn  btns">C1</kbd>
+      <kbd id="C2" class="btn  btns">C2</kbd>
+      <kbd id="C3" class="btn  btns">C3</kbd>
+      <kbd id="C4" class="btn  btns">C4</kbd>
       <kbd class="">D</kbd>
-      <kbd class="kbd">D1</kbd>
-      <kbd class="kbd">D2</kbd>
-      <kbd class="kbd">D3</kbd>
-      <kbd class="kbd">D4</kbd>
+      <kbd id="D1" class="btn  btns">D1</kbd>
+      <kbd id="D2" class="btn  btns">D2</kbd>
+      <kbd id="D3" class="btn  btns">D3</kbd>
+      <kbd id="D4" class="btn  btns">D4</kbd>
       <kbd class="">E</kbd>
-      <kbd class="kbd">E1</kbd>
-      <kbd class="kbd">E2</kbd>
-      <kbd class="kbd">E3</kbd>
-      <kbd class="kbd">E4</kbd>
+      <kbd id="E1" class="btn  btns">E1</kbd>
+      <kbd id="E2" class="btn  btns">E2</kbd>
+      <kbd id="E3" class="btn  btns">E3</kbd>
+      <kbd id="E4" class="btn  btns">E4</kbd>
     </div>
     </div>
     <div class="col-span-1">
@@ -102,9 +104,9 @@
         <hr class="border-dashed">
       </div>
       <div class="bg-slate-100 rounded-xl p-8 my-5">
-        <div class="overflow-x-auto">
+        <!-- <div class="overflow-x-auto">
           <table class="table">
-            <!-- head -->
+            head
             <thead>
               <tr>
                 <th>Seat</th>
@@ -113,17 +115,17 @@
               </tr>
             </thead>
             <tbody>
-              <!-- row 1 -->
+              row 1
               <tr>
                 <td>C2</td>
                 <td>Economy</td>
                 <td>550</td>
               </tr>
-              <!-- row 2 -->
+              row 2
               <td>C2</td>
                 <td>Economy</td>
                 <td>550</td>
-              <!-- row 3 -->
+              row 3
               <tr>
                 <td>Total Price</td>
                 <td></td>
@@ -131,19 +133,36 @@
               </tr>
             </tbody>
           </table>
-          <label class="input input-bordered flex items-center gap-2">
+        </div> -->
+          <div >
+            <ul id="seatCalculation">
+
+            </ul>
+              <hr>
+              <p>Total <span id="totalCost"></span></p>
+          </div>
+        <label class="input input-bordered flex items-center gap-2">
             <input type="text" class="grow" placeholder="Have any coupon?"/>
             <button class="btn bg-green-500">Apply</button>
           </label>
-          </div>
+          
           
           <div class="flex my-6">
             <p class="flex-1">Grand Total </p>
-          <p><span>BDT</span>1100</p></div>
+          <p>BDT <span>1100</span></p></div>
       </div>
     </div>
 
   </section>
+
+  <div class="m-10">
+    <h1> Hello world</h1>
+  <p>Go forward</p>
+  <div class=""><button onclick="handleClick(event)" class="btn  btns" id="test">click me</button></div>
+  </div>
+
+<script src="script.js"></script>
+<script src="app.js"></script>
 </body>
 
 </html>
