@@ -27,10 +27,16 @@ for(const btn of allBtn){
         li.appendChild(p);
         li.appendChild(p3);
         seatCalculator.appendChild(li);
-           
+
+        const totalCost = document.getElementById("totalCost").innerText;
+        const convertedCost = parseInt(totalCost);
+        // document.getElementById("totalCost").innerText = convertedCost + parseInt(seatPrice);
+        
+           const sum = convertedCost + parseInt(seatPrice);
 
 
 
+        setInnerText ("totalCost", sum);
         setInnerText ("seatAvailable", count);
         
         
