@@ -185,20 +185,53 @@
         The integrated testing features allow for a streamlined .
       </p>
     </div>
-    <div class="bg-white mx-32 my-8 p-8">
-      <div class="">
-        <div class="flex space-x-4">
-            <img src="images/bus-logo.png" alt="">
-          <div class="">
-            <h3> eZy Paribahan</h3>
-            <p>Coach-009 World Class! AC_Biz</p>
+    <div class="bg-white mx-32 my-8 grid grid-cols-5 border-2 rounded-xl">
+      <div class="col-span-3">
+        <div class="flex justify-between p-2 lg:p-4">
+            <div class="flex">
+              <div class="">
+                <img src="images/bus-logo.png" alt=""></div>
+            <div class="">
+              <h3> eZy Paribahan</h3>
+              <p>Coach-009 World Class! AC_Biz</p>
+            </div>
           </div>
-          <button class="bg-green-200"><img src="images/seat-green.png" alt="">40 Seats left</button>
-          <!-- <div class="flex border-2 border-green-300">
-            <img src="images/seat-green.png" alt="">
-            <p>40 Seats left</p>
-          </div> -->
+          <div class="flex"><img src="images/seat-green.png" alt=""><span id="seatAvailable">20</span>Seats left</div>
+          
         </div>
+        <div class="bg-gray-200 border-2 rounded-lg p-2 ml-2 lg:ml-4">
+          <div class="flex justify-between">
+            <p>Route</p>
+            <p>Dhaka - Sylhet</p>
+            
+          </div>
+          <hr class="bg-white border-dashed my-6">
+          <div class="flex justify-between">
+            <p>Departure Time</p>
+            <p>9:00 PM</p>
+          </div>
+          <hr class="bg-white border-dashed my-6">
+          <div class="flex justify-between">
+            <div class=" bg-slate-500 border-2 rounded-lg p-2">
+              <p>Boarding Point-Laxmipur</p>
+          </div>
+            <div class=" bg-slate-500
+            border-2 rounded-lg p-4"><p>Dropping Point - Bogura</p>
+          </div>
+            <div class=" bg-slate-500
+            border-2 rounded-lg p-4"><p>Est. Time - 11 Hour</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1">
+        <img src="images/info-devider.png" alt="">
+        
+      </div>
+      <div class="col-span-1">
+        <img src="images/fare.png" alt="">
+        <p><span id="price">550</span></p>
+        <p>Per Seat</p>
       </div>
     </div>
   
@@ -215,19 +248,111 @@
       
       <div class="flex flex-1">
         <img src="images/seat-gray.png" alt="">
-        <p><span id="seatAvailable"> 20</span> Available</p>
+        <p> Available</p>
       </div>
       <div class="flex">
         <img src="images/seat-green-filled.png" alt="">
-        <p>Selected <span id="price">550</span></p>
+        <p>Selected </p>
       </div>
     </div>
     <hr class="border-dashed">
     <div class="m-6 flex">
       <img class="self-end" src="images/wheel.png" alt="">
     </div>
-    <div class="grid grid-cols-5 gap-7">    
-      <kbd class="">A</kbd>
+    <div class="grid grid-cols-5 gap-7">
+      <div class="text-center">
+        <p>A</p>
+      </div> 
+      <!-- .border-2.bg-slate-300.p-2>p*40 -->
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>A1</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>A2</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>A3</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>A4</p>
+      </div>
+      <div class="text-center">
+        <p>B</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>B1</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>B2</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>B3</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>B4</p>
+      </div>
+      <div class="text-center">
+        <p>C</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>C1</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>C2</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>C3</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>C4</p>
+      </div>
+      <div class="text-center">
+        <p>D</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>D1</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>D2</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>D3</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>D4</p>
+      </div>
+      <div class="text-center">
+        <p>E</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>E1</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>E2</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>E3</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>E4</p>
+      </div>
+      <div class="text-center">
+        <p>F</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>F1</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>F2</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>F3</p>
+      </div>
+      <div class="seats border-2 bg-slate-300 p-2 text-center">
+        <p>F4</p>
+      </div>
+      
+      <!-- <div class="">A</div>
       <kbd id="A1" class="btn  btns">A1</kbd>
       <kbd id="A2" class="btn  btns">A2</kbd>
       <kbd id="A3" class="btn  btns">A3</kbd>
@@ -252,14 +377,15 @@
       <kbd id="E2" class="btn  btns">E2</kbd>
       <kbd id="E3" class="btn  btns">E3</kbd>
       <kbd id="E4" class="btn  btns">E4</kbd>
+    </div> -->
     </div>
-    </div>
+    </div> 
     <div class="col-span-1">
       <div class="">
         <h3 class="raleway text-2xl font-semibold mb-5">Select Your Seat</h3>
         <hr class="border-dashed">
       </div>
-      <div class="bg-slate-100 rounded-xl p-8 my-5">
+      <!-- <div class="bg-slate-100 rounded-xl p-8 my-5"> -->
         <!-- <div class="overflow-x-auto">
           <table class="table">
             head
@@ -291,28 +417,31 @@
           </table>
         </div> -->
           <div >
-            <ul id="seatCalculation">
-
-            </ul>
+            <div class="flex justify-between mx-3">
+              <div class="seat">Seat<span class="border-2 bg-green-400 border-teal-300 ">0</span> </div>
+              <div class="seatclass">Class</div>
+              <div class="ePrice">price</div>
+            </div>
+            <div id="seatCalculation"></div>
               <hr>
               <p>Total <span id="totalCost">0</span></p>
           </div>
         <label class="input input-bordered flex items-center gap-2">
-            <input type="text" class="grow" placeholder="Have any coupon?"/>
-            <button class="btn bg-green-500">Apply</button>
+            <input id="input-field" type="text" class="grow" placeholder="Have any coupon?"/>
+            <button onclick="gttlCost('appt-btn')" class="btn bg-green-500">Apply</button>
           </label>
           
           
           <div class="flex my-6">
             <p class="flex-1">Grand Total </p>
-          <p>BDT <span>1100</span></p></div>
+          <p>BDT <span id="gtotal">0</span></p></div>
       </div>
     </div>
 
   </section>
 </section>
  
-
+<div id="mining"></div>
 <script src="script.js"></script>
 <script src="app.js"></script>
 </body>
