@@ -5,15 +5,32 @@ let count = 20;
 for (const seat of allSeats) {
     seat.addEventListener("click", function (e) {
         count = count - 1;
-        
         const seatName = e.target.parentNode.childNodes[1].innerText;
         const category = 'Economy';
         const seatPrice = document.getElementById("price").innerText;
         
         const seatCalculator = document.getElementById("seatCalculation");
 
+        e.target.setAttribute("disabled",false);
+        const totalSelect = document.getElementById("totalSelect").innerText;
+        const convertedSelect = parseInt(totalSelect);
+        // for (let i = convertedSelect; i < 20; i++){
+            let nCount = convertedSelect+1;
+            document.getElementById("totalSelect").innerText = nCount;
+        if(nCount+1 > 5){    
+            alert("no more selection")
+            return;
+        }
+        // if(i>4){
+        //     
+        // } 
+        
+       
+
         const div = document.createElement("div");
         // div.classList
+
+
 
         const p = document.createElement("p");
         p.innerText = seatName;
@@ -25,6 +42,7 @@ for (const seat of allSeats) {
         div.appendChild(p);
         div.appendChild(p2);
         div.appendChild(p3);
+
         seatCalculator.appendChild(div);
 
        
